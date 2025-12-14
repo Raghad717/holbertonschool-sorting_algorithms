@@ -26,9 +26,10 @@ for (i = gap; i < size; i++)
 {
 /* Store current element */
 temp = array[i];
-
-/* Shift earlier gap-sorted elements up until the correct location
-for array[i] is found */
+/*
+* Shift earlier gap-sorted elements up until the correct location
+*for array[i] is found
+*/
 j = i;
 while (j >= gap && array[j - gap] > temp)
 {

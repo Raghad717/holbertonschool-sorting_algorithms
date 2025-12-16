@@ -31,12 +31,12 @@ while (1)
 /* Find element from left that is >= pivot */
 do {
 i++;
-} while (array[i] < pivot);
+} while (i <= high && array[i] < pivot);
 
 /* Find element from right that is <= pivot */
 do {
 j--;
-} while (array[j] > pivot);
+} while (j >= low && array[j] > pivot);
 
 /* If pointers have met or crossed */
 if (i >= j)
